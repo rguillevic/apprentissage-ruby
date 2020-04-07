@@ -1,19 +1,17 @@
-arrays = []
 
-i=1
-50.times do 
+mails = []
 
-if(i<10)
-arrays << "jean.dupont.0#{i}@email.fr"
+i = 0
 
-else
 
-arrays << "jean.dupont.#{i}@email.fr"
+while (i <= 50)
+    if (i < 10)
+        then adresse = "jean.dupont.0#{i}@email.fr"
+        else adresse = "jean.dupont.#{i}@email.fr"
+    mails << adresse
+    end
+    
+   i = i + 1
 end
 
-i=i+1
-
-end
-
-puts arrays 
-
+puts mails
