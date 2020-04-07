@@ -1,10 +1,19 @@
-chiffre = 01
 
-mail = []
-
-mail = while (chiffre < 51)
-    if chiffre.even?
-        puts "jean.dupont#{chiffre}@email.fr"
+while (i <= mail)
+while (i <= 50)
+    if (i < 10)
+        then mail = "jean.dupont.0#{i}@email.fr"
+        else mail = "jean.dupont.#{i}@email.fr"
     end
-    chiffre += 1
+    if ((i) % 2 == 0)
+        if (i < 10)
+            then puts"jean.dupont.0#{i}@email.fr"
+            else puts "jean.dupont.#{i}@email.fr"
+        end
+        emails << mail
+    end
+   i = i + 1
 end
+     i = i + 1
+end
+puts emails
